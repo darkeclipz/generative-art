@@ -33,8 +33,13 @@ Created with HTML Canvas, check `script.js` for more info.
 
 ## 005
 
-![x](example6.PNG)
+![x](example5.PNG)
 
 ## 006
 
-![x](example5.PNG)
+![x](example6.PNG)
+
+
+## 007
+
+![x](example7.PNG)

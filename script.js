@@ -16,13 +16,13 @@ Parameters = {
     rotation: 
         randBetween(1, 2*Math.PI),
     velocity: 
-        randBetween(1, 4),
+        randBetween(1, 8),
     angularVelocity: 
         randBetween(0, Math.PI * 0.02),
     length: 
-        randBetween(50, 125),
+        randBetween(500, 2500),
     spawn:
-        3
+        6
 }
 
 class Root {

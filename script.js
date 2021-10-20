@@ -6,6 +6,7 @@ canvas.height = window.innerHeight;
 
 
 randBetween = (a, b) => {
+    if(a>b) console.error('a must be smaller than b.');
     return () => { return Math.random() * (b-a) + a };
 }
 

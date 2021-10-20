@@ -82,6 +82,11 @@ document.addEventListener("mousedown", () => {
 });
 
 document.addEventListener("touchstart", () => {
+    if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
+        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        mx = touch.pageX;
+        my = touch.pageY;
+    }
     mouseDown = true;
 });
 
@@ -102,8 +107,11 @@ document.addEventListener("mousemove", (e) => {
 });
 
 document.addEventListener("touchmove", (e) => {
-    mx = e.clientX;
-    my = e.clientY;
+    if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
+        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        mx = touch.pageX;
+        my = touch.pageY;
+    }
 });
 
 let t = 0;

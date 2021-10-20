@@ -20,3 +20,19 @@ Created with HTML Canvas, check `script.js` for more info.
 ## 002
 
 ![x](example2.PNG)
+
+## 003
+
+![x](example3.PNG)
+
+## 004
+
+![x](example4.PNG)
+
+## 005
+
+![x](example6.PNG)
+
+## 006
+
+![x](example5.PNG)

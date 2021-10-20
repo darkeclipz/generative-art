@@ -57,10 +57,16 @@ class Root {
         this.rotY += this.ry;
 
         ctx.fillStyle = 'hsl(' + 0.1*this.color + ', 50%, ' + (this.length / this.maxLength * (50 - 20) + 30) + '%)';
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.scale * (Math.cos(this.length*.1) * .5 + .8), 0, 2 * Math.PI);
-        ctx.fill();
-        ctx.stroke();
+        // ctx.beginPath();
+        // ctx.arc(this.x, this.y, this.scale * (Math.cos(this.length*.1) * .5 + .8), 0, 2 * Math.PI);
+        // ctx.fill();
+        // ctx.stroke();
+
+        ctx.fillRect(this.x, this.y, this.scale, this.scale);
+
+        ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+        ctx.strokeRect(this.x, this.y, this.scale, this.scale);
+
 
         this.length++;
     }

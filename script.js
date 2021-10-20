@@ -14,7 +14,7 @@ Parameters = {
     scale: 
         randBetween(20, 30),
     rotation: 
-        randBetween(0, 2*Math.PI),
+        randBetween(1, 2*Math.PI),
     velocity: 
         randBetween(1, 4),
     angularVelocity: 
@@ -22,7 +22,7 @@ Parameters = {
     length: 
         randBetween(50, 125),
     spawn:
-        3
+        15
 }
 
 class Root {
@@ -81,7 +81,15 @@ document.addEventListener("mousedown", () => {
     mouseDown = true;
 });
 
+document.addEventListener("touchstart", () => {
+    mouseDown = true;
+});
+
 document.addEventListener("mouseup", () => {
+    mouseDown = false;
+});
+
+document.addEventListener("touchend", () => {
     mouseDown = false;
 });
 
@@ -89,6 +97,11 @@ let mx;
 let my;
 
 document.addEventListener("mousemove", (e) => {
+    mx = e.clientX;
+    my = e.clientY;
+});
+
+document.addEventListener("touchmove", (e) => {
     mx = e.clientX;
     my = e.clientY;
 });

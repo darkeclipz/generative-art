@@ -3,6 +3,8 @@
 This repository contains some algorithms to for generative art, and some ideas.
 Will update the readme properly later.
 
+ * [Tubes demo](https://darkeclipz.github.io/generative-art/)
+
 # Rocube
 
 Rendered in Blender with Cycles.
